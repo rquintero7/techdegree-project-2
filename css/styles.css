@@ -1,0 +1,23 @@
+/* ================================= 
+            Base Element Styles
+        ==================================== */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Varela Round', sans-serif;
+            line-height: 1.6;
+            background-color: rgb(255, 255, 255);
+            color: #3A3A3A;
+            margin: 1.5em auto;
+            text-align: center;
+        }
+        
+        header,
+        main,
+        footer {
+            margin: 0 auto;
+            max-width: 90%;
+        }
