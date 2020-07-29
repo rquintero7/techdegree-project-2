@@ -234,7 +234,7 @@
                 clear: both;
             }
             .back-to-top {
-                display: none;
+                display: right;
             }
             .main-footer {
                 max-width: 95%;
@@ -262,7 +262,17 @@
                 border-left: 1.5em solid #B7EFCD;
                 border-right: 1.5em solid #B7EFCD;
             }
+            .back-to-top {
+            
+            display: inline-block;
+         }
         }
+        
+        .back-to-top a {
+            font-size: .75em;
+            display: inline;
+        }
+    
         /* ---- Float clearfix ---- */
         
         .clearfix::after {
