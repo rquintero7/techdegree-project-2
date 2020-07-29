@@ -182,6 +182,7 @@
                 margin-left: 1.2em;
             }
             .bottom-nav {
+                padding-left: 400px;
                 float: none;
                 margin: 0;
                 display: inline-block;
@@ -234,7 +235,7 @@
                 clear: both;
             }
             .back-to-top {
-                display: right;
+                display: none;
             }
             .main-footer {
                 max-width: 95%;
@@ -262,9 +263,15 @@
                 border-left: 1.5em solid #B7EFCD;
                 border-right: 1.5em solid #B7EFCD;
             }
+            .bottom-nav {
+                padding-left: 700px;
+                float: none;
+                margin: 0;
+                display: inline-block;
+            }
             .back-to-top {
             
-            display: inline-block;
+            display: none;
          }
         }
         
