@@ -21,3 +21,253 @@
             margin: 0 auto;
             max-width: 90%;
         }
+                nav ul,
+        footer ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        p {
+            font-weight: 400;
+            font-size: .7em;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            color: rgb(52, 171, 235);
+        }
+        
+        h1 {
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            color: #484848;
+        }
+
+                a,
+        h2 {
+            color: #12CAD6;
+            font-weight: 700;
+            font-size: 1.1em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        h3 {
+            color: #484848;
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+        
+        nav {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            padding: 10px 15px;
+            text-align: center;
+            display: block;
+            margin: 5px 0;
+        }
+        /* ================================= 
+        Base Layout Styles
+        ==================================== */
+        
+        .main-content {
+            background-color: #fff;
+            padding: 0 1em 3em;
+        }
+        
+        .col-text {
+            padding: 1em 0 2em;
+        }
+        
+        .port-img,
+        .skills-img {
+            max-width: 100%;
+        }
+        
+        .intro-img {
+            max-width: 65%;
+        }
+        
+        .col p {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        .main-nav {
+            margin-bottom: 3em;
+        }
+        
+        .portfolio,
+        .skills-title {
+            padding: 3em 0 3em;
+        }
+        
+        .contact {
+            padding: 3em 0;
+        }
+        
+        .contact-text p {
+            font-size: 1.2em;
+        }
+        
+        .main-footer {
+            border-top: 1px solid #DCDCDC;
+            padding: 2em 0 0;
+        }
+        
+        .contact a {
+            line-height: 1.6;
+            color: #484848;
+            padding-left: 1em;
+            font-weight: 600;
+        }
+        
+        .contact h2 {
+            margin: 1em 0 3em;
+        }
+        
+        .contact-text {
+            margin-bottom: 2em;
+        }
+        
+        .back-to-top {
+            float: right;
+        }
+        
+        .back-to-top a {
+            font-size: .75em;
+            display: block;
+        }
+        
+        .bottom-name {
+            margin: 0;
+            float: left;
+        }
+        
+        .bottom-nav {
+            display: none;
+        }
+        /* ---- Navigation ---- */
+        
+        nav a:link {
+            background-color: #fff;
+        }
+        
+        nav a:hover {
+            background-color: #F0F0F0;
+        }
+        /* ================================= 
+             Media Queries
+            ==================================== */
+        
+        @media (min-width: 768px) {
+            .main-nav {
+                overflow: hidden;
+                display: inline-block;
+            }
+            .main-nav li,
+            .bottom-nav li {
+                float: left;
+            }
+            .skills-img {
+                float: left;
+                margin: 18px 18px 18px 0;
+                padding-left: 10px;
+                width: 40%;
+            }
+            .bottom-nav li {
+                margin-left: 1.2em;
+            }
+            .bottom-nav {
+                float: none;
+                margin: 0;
+                display: inline-block;
+            }
+            .intro-img {
+                float: right;
+                margin: 14px 0 14px 14px;
+                width: 45%;
+            }
+            .intro-paragraph {
+                float: left;
+                width: 52%;
+                text-align: left;
+            }
+            .intro-paragraph,
+            .contact-text,
+            .contact p,
+            .skills-text {
+                font-size: 1.2em;
+            }
+            .skills-text {
+                float: right;
+                max-width: 52%;
+                text-align: left;
+            }
+            .contact-text {
+                max-width: 65%;
+                margin: 0 auto 3em;
+            }
+            main,
+            footer {
+                max-width: 100%;
+            }
+            .main-content {
+                max-width: 100%;
+            }
+            .col {
+                float: left;
+                max-width: 50%;
+                padding: 0 8px 24px;
+            }
+            .col-text p {
+                height: 69px
+            }
+            .portfolio-area {
+                max-width: 100%;
+                display: block;
+            }
+            .contact {
+                clear: both;
+            }
+            .back-to-top {
+                display: none;
+            }
+            .main-footer {
+                max-width: 95%;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .main-name {
+                float: left;
+            }
+            .main-nav {
+                float: right;
+            }
+            .col {
+                width: 33.33%;
+            }
+            .intro-img {
+                width: 40%;
+            }
+            .intro-paragraph {
+                width: 57%;
+            }
+            .main-content {
+                border-left: 1.5em solid #B7EFCD;
+                border-right: 1.5em solid #B7EFCD;
+            }
+        }
+        /* ---- Float clearfix ---- */
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
