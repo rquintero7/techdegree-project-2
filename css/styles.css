@@ -1,290 +1,358 @@
-/* ================================= 
-            Base Element Styles
-        ==================================== */
-        
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Varela Round', sans-serif;
-            line-height: 1.6;
-            background-color: rgb(255, 255, 255);
-            color: #3A3A3A;
-            margin: 1.5em auto;
-            text-align: center;
-        }
-        
-        header,
-        main,
-        footer {
-            margin: 0 auto;
-            max-width: 90%;
-        }
-                nav ul,
-        footer ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        
-        p {
-            font-weight: 400;
-            font-size: .7em;
-        }
-        
-        a {
-            text-decoration: none;
-            font-weight: 600;
-            color: rgb(52, 171, 235);
-        }
-        
-        h1 {
-            font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
-            color: #484848;
-        }
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Zilla Slab', serif;*/
 
-                a,
-        h2 {
-            color: #12CAD6;
-            font-weight: 700;
-            font-size: 1.1em;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        h3 {
-            color: #484848;
-            font-weight: 500;
-            font-size: 1.2em;
-        }
-        
-        nav {
-            max-width: 90%;
-            margin: 0 auto;
-        }
-        
-        nav a {
-            padding: 10px 15px;
-            text-align: center;
-            display: block;
-            margin: 5px 0;
-        }
-        /* ================================= 
-        Base Layout Styles
-        ==================================== */
-        
-        .main-content {
-            background-color: #fff;
-            padding: 0 1em 3em;
-        }
-        
-        .col-text {
-            padding: 1em 0 2em;
-        }
-        
-        .port-img,
-        .skills-img {
-            max-width: 100%;
-        }
-        
-        .intro-img {
-            max-width: 65%;
-        }
-        
-        .col p {
-            max-width: 90%;
-            margin: 0 auto;
-        }
-        
-        .main-nav {
-            margin-bottom: 3em;
-        }
-        
-        .portfolio,
-        .skills-title {
-            padding: 3em 0 3em;
-        }
-        
-        .contact {
-            padding: 3em 0;
-        }
-        
-        .contact-text p {
-            font-size: 1.2em;
-        }
-        
-        .main-footer {
-            border-top: 1px solid #DCDCDC;
-            padding: 2em 0 0;
-        }
-        
-        .contact a {
-            line-height: 1.6;
-            color: #484848;
-            padding-left: 1em;
-            font-weight: 600;
-        }
-        
-        .contact h2 {
-            margin: 1em 0 3em;
-        }
-        
-        .contact-text {
-            margin-bottom: 2em;
-        }
-        
-        .back-to-top {
-            float: right;
-        }
-        
-        .back-to-top a {
-            font-size: .75em;
-            display: block;
-        }
-        
-        .bottom-name {
-            margin: 0;
-            float: left;
-        }
-        
-        .bottom-nav {
-            display: none;
-        }
-        /* ---- Navigation ---- */
-        
-        nav a:link {
-            background-color: #fff;
-        }
-        
-        nav a:hover {
-            background-color: #F0F0F0;
-        }
-        /* ================================= 
-             Media Queries
-            ==================================== */
-        
-        @media (min-width: 768px) {
-            .main-nav {
-                overflow: hidden;
-                display: inline-block;
-            }
-            .main-nav li,
-            .bottom-nav li {
-                float: left;
-            }
-            .skills-img {
-                float: left;
-                margin: 18px 18px 18px 0;
-                padding-left: 10px;
-                width: 40%;
-            }
-            .bottom-nav li {
-                margin-left: 1.2em;
-            }
-            .bottom-nav {
-                padding-left: 400px;
-                float: none;
-                margin: 0;
-                display: inline-block;
-            }
-            .intro-img {
-                float: right;
-                margin: 14px 0 14px 14px;
-                width: 45%;
-            }
-            .intro-paragraph {
-                float: left;
-                width: 52%;
-                text-align: left;
-            }
-            .intro-paragraph,
-            .contact-text,
-            .contact p,
-            .skills-text {
-                font-size: 1.2em;
-            }
-            .skills-text {
-                float: right;
-                max-width: 52%;
-                text-align: left;
-            }
-            .contact-text {
-                max-width: 65%;
-                margin: 0 auto 3em;
-            }
-            main,
-            footer {
-                max-width: 100%;
-            }
-            .main-content {
-                max-width: 100%;
-            }
-            .col {
-                float: left;
-                max-width: 50%;
-                padding: 0 8px 24px;
-            }
-            .col-text p {
-                height: 69px
-            }
-            .portfolio-area {
-                max-width: 100%;
-                display: block;
-            }
-            .contact {
-                clear: both;
-            }
-            .back-to-top {
-                display: none;
-            }
-            .main-footer {
-                max-width: 95%;
-                margin: 0 auto;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .main-name {
-                float: left;
-            }
-            .main-nav {
-                float: right;
-            }
-            .col {
-                width: 33.33%;
-            }
-            .intro-img {
-                width: 40%;
-            }
-            .intro-paragraph {
-                width: 57%;
-            }
-            .main-content {
-                border-left: 1.5em solid #B7EFCD;
-                border-right: 1.5em solid #B7EFCD;
-            }
-            .bottom-nav {
-                padding-left: 700px;
-                float: none;
-                margin: 0;
-                display: inline-block;
-            }
-            .back-to-top {
-            
-            display: none;
-         }
-        }
-        
-        .back-to-top a {
-            font-size: .75em;
-            display: inline;
-        }
+/* Base Element Styles */
+
+* {
+    box-sizing: border-box;
+  }
+
+    body {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 200;
+     line-height: 1.4;
+     letter-spacing: .05em;
+     text-align: center;
+     color: #333;
+     margin: 0 auto;
+    }
+
+    p {
+      font-family:'Zilla Slab', serif;
+      font-weight: 300;
+      font-size: 1.5em; 
+      margin: auto;
+      max-width: 80%;
+      padding-bottom: 30px;
+    }
+
+    header {
+      background: #f9fafa url('../images/AshcroftFall.jpg') no-repeat center;
+      background-size: cover;
+      margin-bottom: 2em;
+    }
     
-        /* ---- Float clearfix ---- */
-        
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+    header p {
+      color: rgb(10, 10, 10);
+      font-weight: 200;
+    }
 
+    header,
+    footer {
+      background-color:#E9EFF1;
+      margin-top: 0;
+      padding-bottom: 20px;
+    }
+
+    a {
+      font-size: 1em;
+      text-decoration: none;
+      color: #333;
+      text-transform: uppercase;
+    }
+    
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #fff;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      margin: 0px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      color: #101111;
+      padding: 60px 0px;
+      margin: 0px; 
+    }
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+
+    h4 {
+      font-weight: 400;
+      text-align: left;
+      display: inline-block;
+      padding: 0;
+      margin-left: 30px;
+    }
+
+    hr { 
+      width: 95%;
+    }
+
+    span {
+      font-style: italic;
+      font-weight: 500;
+      margin-left: 30px;
+    }
+
+    /* class styles */
+
+    h1 a {
+      text-transform: none;
+      color: #fff;
+    }
+  
+    h1 .main-nav {
+      text-align: center;
+      margin-top: 0px;
+    }
+
+    .main-nav .main-nav li {
+      width: 80%;
+    }
+    
+    .main-nav li {
+      font-size: 1.25em;
+      font-weight: 600;
+      padding: 10px 0;
+      margin: 0px 20px 10px 20px;
+      background-color: rgb(153, 151, 151);
+    }
+
+    h1 a, .main-nav li {
+      color: rgb(8, 8, 8);
+    }
+  
+    .me  {
+      border-radius: 3px;
+      max-height: 250px;
+      display: block;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }    
+
+    .portfolio {
+      display: block;
+      margin: auto;
+      max-width: 60%;
+      padding-bottom: 20px;
+    }
+    .skill-list {
+      margin-top: -15px;
+      padding-bottom: 60px;
+      font-size: 1.1em;
+      font-weight: 400;
+      display: block;
+      max-width: 80%;
+      margin-left: 10%;
+    }
+
+    .footer-name {
+      float: left;
+      line-height: 12px;
+      text-transform: none;
+      padding: 16px 0;
+      margin-left: 1em;
+    }
+    
+    .footer-nav {
+      font-weight: 600;
+      text-align: right;
+      margin-right: 1em;
+    }
+
+    footer li {
+      display: inline-block;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+
+    .top,
+    .footer-nav li:last-child {
+      margin-right: 0;
+    }
+
+    .full {
+      display: none;
+    }
+
+    /* Pseudo-classes,  I did not like the change of color after using links, so I deleted this catagory.  */
+    /* Nav text changes color in min-width 1024px*/
+
+    /* Floated Columns ------------------*/
+
+    .container {
+      margin: 0 auto;
+      max-width: 1100px;
+    }
+
+   .col {
+     display: block;
+     margin:0px 10px 20px 10px;
+     max-width: 100%;
+     text-align: center;
+     padding-top: 5px;
+   }
+    
+   /* Float Clearfix ------------------ */
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+  /* Media Queries ------------------- */
+
+  @media (min-width: 768px) {
+
+    h1 {
+      padding-bottom: 20px;
+    }
+
+    .me {
+      max-width: 350px;
+      float: right;
+      margin-right: 2em;
+      width: calc(50% - 40px);
+    }
+
+    header p {
+      text-align: left;
+      display: block;
+      float: left;
+      padding-top: 30px;
+      padding-left: 40px;
+      width: calc(50% - 40px);
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    
+    .col {
+      height: 500px;
+      float: left;
+      width: calc(50% - 20px);
+      margin-bottom: 0;
+    }
+
+    .main-nav {
+      margin-top: 0px;
+    }
+
+    .main-nav li {
+      display: inline-block;
+      background-color: transparent;
+    }
+
+    .main-nav li:last-child {
+      margin-right: 0;
+    }
+
+    .main-nav a {
+      color: #333;
+    }
+
+    .top {
+      display: none;
+    }
+
+    .full {
+      display: inline-block;
+    }
+  
+  h2 .footer-name {
+    padding-top: 0px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  footer li {
+    margin-right: 0px;
+  }
+
+  .footer-nav {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
+
+  .footer-nav a {
+    font-size: 1em;
+    line-height: 27px;
+    padding: 15px;
+  }
+
+  .footer-nav a:last-child {
+    padding-right: 0px;
+  }
+
+
+  .footer-nav a li:last-child {
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  }
+
+  @media (min-width: 1024px) {
+
+    body {
+      background-color: #e9eff1;
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    main {
+      max-width: 95%;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+
+    a {
+      padding: 15px;
+    }
+
+    .main-nav li a {
+      color: #070707;
+    }
+
+    .main-nav a:last-child {
+      padding-right: 0px;
+    }
+
+    h1 {
+      float: left;
+      height: 18px;
+      line-height: 16px;
+      margin-left: 40px;
+      padding-top: 60px;
+    }
+
+    .main-nav {
+      text-align: right;
+      padding: 40px;
+      margin: 0px;
+    }
+
+    .main-nav li {
+      margin: 5px;
+    }
+
+    .main-nav li:last-child {
+      padding-right: 0px;
+    }
+
+    .head-shot {
+      margin-right: 60px;
+    }
+
+    .wrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .col {
+      width: calc(33.333% - 20px);
+      height: 450px;
+    }
+  }

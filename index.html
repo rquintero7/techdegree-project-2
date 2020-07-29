@@ -1,100 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Responsive Webpage</title>
-    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <title>Responsive Layout</title>
 </head>
+
 <body>
-    <header>
-        <div class="clearfix">
-            <h1 class="main-name" id="home">Roberto Quintero</h1>
-            <nav class="main-nav clearfix">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="intro clearfix">
-            <img class="intro-img" src="images/responsive-layout-profile.png" alt="Profile Image">
-            <p class="intro-paragraph">Hi! I'm a front-end developer who loves responsive design and css. I recently
-                        finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
-        </div>
+    <header class="clearfix">
+        <h1><a href="#">Roberto Quintero</a></h1>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <img class="me clearfix" src="images/responsive-layout-profile.png" alt="Me">
+        <p>Hi! I'm a Front-End Developer who loves responsive design and CSS. I recently finished learning Front-End Web
+        devlopement at Treehouse and am excited to put all skills to use!
+        </p>
     </header>
+
     <main>
-        <div id="portfolio" class="portfolio-area col col-text">
-            <h2 class="portfolio">PORTFOLIO</h2>
-        </div>
-        <div class="col col-text">
-            <img class="port-img" src="images/portfolio-1.png" alt="Marketing Page">
-            <h3>Marketing Page</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I'm
-                interested in.</p>
-        </div>
+        <h2 id="portfolio"> Portfolio</h2>
 
-        <div class="col col-text">
-            <img class="port-img" src="images/portfolio-2.png" alt="Search Page">
-            <h3>Search Page</h3>
-            <p>This project searches through a specific database to find information that the user is trying to
-                look up.</p>
-        </div>
-
-        <div class="col col-text">
-            <img class="port-img" src="images/portfolio-3.png" alt="Travel App">
-            <h3>Travel App</h3>
-            <p>This project compares travel times based on different transportation methods and tells you the
-                best one.</p>
-        </div>
-
-        <div class="col col-text">
-            <img class="port-img" src="images/portfolio-4.png" alt="Map of Favorite Spots">
-            <h3>Map of Favorite Spots</h3>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a
-                do-it-yourself walking tour.</p>
-        </div>
-
-        <div class="col col-text">
-            <img class="port-img" src="images/portfolio-5.png" alt="Photo Gallery">
-            <h3>Photo Gallery</h3>
-            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate
-            through photos.</p>
-        </div>
-
-        <div class="col col-text">
-            <img class="port-img" src="images/portfolio-6.png" alt="Calculator">
-            <h3>Calculator</h3>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
-        </div>
-
-        <div class="contact" id="contact">
-            <h2>CONTACT</h2>
-            <p class="contact-text">If you're interested in chatting or want more information about what I've been working
-                on, I'd love to hear from you!</p>
-            <p>Phone <a href="555-555-5555">555-555-5555</a></p>
-            <p>Email <a href="mailto:rquintero7@gmail.com">123@gmail.com</a></p>
-        </div>
-        
-        </main>
-
-        <footer>
-            <div class="main-footer clearfix">
-                <h4 class="bottom-name">Roberto Quintero</h4>
-                <div class="back-to-top">
-                    <a href="#home">BACK TO TOP</a>
-                </div>
+        <div class="container clearfix">
+            <div class="col box-1">
+                <img class="portfolio" src="images/portfolio-1.png" alt="thumbnails of portfolios">
+                <h3>Marketing Page</h3>
+                <p>This home page exemplifies the specific message and look that the A1 Market Consulting firm wanted to
+                    convey to their prospective clients.
+                </p>
             </div>
-                    <ul class="bottom-nav clearfix">
-                        <li><a href="#top">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-        </footer>
-    </body>
+
+            <div class="col box-2">
+                <img class="portfolio" src="images/portfolio-2.png" alt="front page of marketing website">
+                <h3>Search Page</h3>
+                <p>This project searches through a specific data base to find the information that the user desires.
+                </p>
+            </div>
+
+            <div class="col box-3">
+                <img class="portfolio" src="images/portfolio-3.png" alt="front page of data search project">
+                <h3>Travel App</h3>
+                <p>This project compares travel times based on various modes of transportation. Allowing the user to
+                    make the best possible choice for their needs.
+                </p>
+            </div>
+
+            <div class="col box-4">
+                <img class="portfolio" src="images/portfolio-4.png" alt="front page of travel app project">
+                <h3>Map of Favorite Spots</h3>
+                <p>This project highlights my favorite spots in the city with mapping apis to plot a do-it-yourself
+                    walking tour.
+                </p>
+            </div>
+
+            <div class="col box-5">
+                <img class="portfolio" src="images/portfolio-5.png" alt="map guide for walking tour">
+                <h3>Photo Gallery</h3>
+                <p>This project displays photographs from a recent trip and allows the viewer to easily navigate through
+                    the shots.
+                </p>
+            </div>
+
+            <div class="col box-6">
+                <img class="portfolio" src="images/portfolio-6.png" alt="front page of calculator project">
+                <h3>Calculator</h3>
+                <p>Enter your numbers and press the big blue button for results!
+                </p>
+            </div>
+        </div>
+
         
-    </html>
+
+    </main>
+    
+
+
+    <footer class="clearfix">
+
+        <h2 id="contact">contact</h2>
+        <p> If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you! </p>
+        <p>Phone<span>+1 (555) 555-5555</span><br>
+            Email<span>123@gmail.com</span>
+        </p>
+
+        
+
+        <h2 class="footer-name">Roberto Quintero</h2>
+
+        <nav class="footer-nav">
+            <ul>
+                <li class="top"><a href="#top">back to top</a></li>
+                <li class="full"><a href="#top">home</a></li>
+                <li class="full"><a href="#portfolio">portfolio</a></li>
+                <li class="full"><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
