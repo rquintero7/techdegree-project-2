@@ -149,6 +149,7 @@ font-family: 'Zilla Slab', serif;*/
     }
 
     .footer-name {
+      font-size: medium;
       float: left;
       line-height: 12px;
       text-transform: none;
@@ -170,6 +171,7 @@ font-family: 'Zilla Slab', serif;*/
 
     .top,
     .footer-nav li:last-child {
+      font-size: medium;
       margin-right: 0;
     }
 
@@ -230,10 +232,12 @@ font-family: 'Zilla Slab', serif;*/
     }
     
     .col {
+      font-size: 16px;
       height: 500px;
       float: left;
       width: calc(50% - 20px);
-      margin-bottom: 0;
+      margin-bottom: 20px;
+      margin-top: 3.5em;
     }
 
     .main-nav {
